@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume - Aleksei Baryshnikov</title>
+        <style>
+            :root {
+                --bg-light: #f4f4f4;
+                --bg-dark: #1e1e1e;
+                --text-light: #333;
+                --text-dark: #ddd;
+                --card-light: #fff;
+                --card-dark: #2c2c2c;
+            }
+
+            [data-theme="light"] body {
+                background: var(--bg-light);
+                color: var(--text-light);
+            }
+
+            [data-theme="dark"] body {
+                background: var(--bg-dark);
+                color: var(--text-dark);
+            }
+
+            [data-theme="light"] .container {
+                background: var(--card-light);
+            }
+
+            [data-theme="dark"] .container {
+                background: var(--card-dark);
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 2rem;
+            }
+            .container {
+                max-width: 900px;
+                margin: auto;
+                padding: 2rem;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1,
+            h2,
+            h3 {
+                margin-top: 1.5rem;
+            }
+            .job {
+                margin-bottom: 2rem;
+            }
+            .job h3 {
+                margin-bottom: 0.25rem;
+            }
+            .job p {
+                margin: 0.25rem 0;
+            }
+            .tech-stack {
+                font-style: italic;
+                color: #888;
+            }
+            .section-title {
+                border-bottom: 2px solid #ccc;
+                padding-bottom: 0.3rem;
+                margin-bottom: 1rem;
+            }
+            .contacts {
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+            .contacts p {
+                margin: 0.2rem 0;
+            }
+            .top-actions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1.5rem;
+            }
+            .btn {
+                background: #007acc;
+                color: white;
+                border: none;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+            .btn:hover {
+                background: #005a99;
+            }
+            .icon-btn {
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                margin-right: 0.5rem;
+                color: inherit;
+            }
+            .summary {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-actions">
+                <h1>Alexey Baryshnikov</h1>
+                <div>
+                    <button
+                        class="icon-btn"
+                        onclick="toggleTheme()"
+                        title="Toggle Theme"
+                    >
+                        <span id="theme-icon">🌞</span>
+                    </button>
+                    <button
+                        class="icon-btn"
+                        onclick="printPDF()"
+                        title="Print to PDF"
+                    >
+                        🖨️
+                    </button>
+                </div>
+            </div>
+            <p><strong>Resume updated:</strong> 7 April 2025</p>
+
+            <div class="contacts">
+                <p>
+                    <strong>Telegram:</strong>
+                    <a href="https://t.me/badian">@badian</a>
+                </p>
+                <p><strong>Phone:</strong> +381 616128875</p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ljlogin@gmail.com">ljlogin@gmail.com</a>
+                </p>
+                <p>
+                    <strong>LinkedIn:</strong>
+                    <a
+                        href="https://www.linkedin.com/in/alexey-b-790bb31b1/"
+                        target="_blank"
+                        >alexey-b-790bb31b1</a
+                    >
+                </p>
+            </div>
+
+            <div class="summary">
+                Experienced engineering manager and developer with over 15 years
+                of hands-on expertise in building web applications of varying
+                complexity — from e-commerce platforms to IDM and anti-fraud
+                systems. Proven track record in fintech, gambling, and HoReCa
+                domains.
+            </div>
+
+            <h2 class="section-title">Experience</h2>
+
+            <div class="job">
+                <h3>Pari — Serbia (May 2024 – Present)</h3>
+                <p><strong>Role:</strong> Engineering Manager / Tech Lead</p>
+                <p>
+                    Led anti-fraud and promotion platforms in gambling and
+                    eSports. Managed 3 cross-functional teams. Delivered secure,
+                    gamified systems on a 1-week Scrumban cycle.
+                </p>
+                <p class="tech-stack">
+                    Tech Stack: TypeScript, Node.js, React, Go, PostgreSQL,
+                    Kafka, Kubernetes
+                </p>
+            </div>
+
+            <div class="job">
+                <h3>Point72 — (October 2021 – May 2024)</h3>
+                <p><strong>Role:</strong> Lead Fullstack Developer</p>
+                <p>
+                    Built tools for traders to manage investments and reporting.
+                    Led frontend architecture with React and Storybook.
+                </p>
+                <p class="tech-stack">
+                    Tech Stack: TypeScript, React, CSS/SCSS, Node.js, Kafka,
+                    Redis, Jenkins, C#
+                </p>
+            </div>
+
+            <div class="job">
+                <h3>Sber — Moscow (September 2019 – October 2021)</h3>
+                <p><strong>Role:</strong> Engineering Manager / Tech Lead</p>
+                <p>Worked across two key projects within Sber ecosystem:</p>
+                <ul>
+                    <li>
+                        <strong
+                            >IDM & IAM Services (Jan 2021 – Oct 2021):</strong
+                        >
+                        Built high-performing team and delivered internal
+                        Identity Provider and IAM services. Introduced modern
+                        architecture and CI/CD practices.
+                    </li>
+                    <li>
+                        <strong
+                            >Card Emission Platform (Sep 2019 – Jan
+                            2021):</strong
+                        >
+                        Led platform transformation with strong focus on
+                        delivery speed, TDD, security, and cross-team
+                        coordination.
+                    </li>
+                </ul>
+                <p class="tech-stack">
+                    Tech Stack: Go, Java, Spring, PostgreSQL, Kubernetes,
+                    TypeScript, Angular, Kafka, Java EE, React, WebSphere, JSF,
+                    Oracle
+                </p>
+            </div>
+
+            <div class="job">
+                <h3>GE — Moscow (November 2018 – September 2019)</h3>
+                <p><strong>Role:</strong> Senior Software Developer</p>
+                <p>
+                    Developed industrial monitoring platform. Built GIS, reduced
+                    UI latency, and improved DevOps practices.
+                </p>
+                <p class="tech-stack">
+                    Tech Stack: JavaScript, React, Angular, Java (Spring),
+                    PostgreSQL, Leaflet
+                </p>
+            </div>
+
+            <div class="job">
+                <h3>Stroy Soft Firm — Moscow (April 2017 – November 2018)</h3>
+                <p>
+                    <strong>Role:</strong> Senior Full-Stack Developer / Tech
+                    Lead
+                </p>
+                <p>
+                    Modernized legacy systems, introduced Docker and MEAN stack,
+                    boosted delivery speed.
+                </p>
+                <p class="tech-stack">
+                    Tech Stack: Node.js, Angular, PHP, MySQL, Docker, MongoDB
+                </p>
+            </div>
+
+            <div class="job">
+                <h3>
+                    Trust Management Ltd. — Moscow (October 2012 – April 2017)
+                </h3>
+                <p>
+                    <strong>Role:</strong> Technical Manager / Full-Stack
+                    Developer
+                </p>
+                <p>
+                    Built e-commerce and CRM systems. Designed scalable
+                    solutions and mentored team.
+                </p>
+                <p class="tech-stack">
+                    Tech Stack: PHP, JavaScript, MySQL, Angular, Bootstrap
+                </p>
+            </div>
+
+            <div class="job">
+                <h3>Domyes Ltd. — Moscow (October 2009 - April 2012)</h3>
+                <p><strong>Role:</strong> Full-Stack Developer</p>
+                <p>
+                    Migrated legacy PERL to PHP, administered web infra, led
+                    platform evolution.
+                </p>
+                <p class="tech-stack">Tech Stack: PHP, jQuery, Apache, MySQL</p>
+            </div>
+        </div>
+        <script>
+            function toggleTheme() {
+                const html = document.documentElement;
+                const current = html.getAttribute("data-theme");
+                const next = current === "light" ? "dark" : "light";
+                html.setAttribute("data-theme", next);
+                document.getElementById("theme-icon").textContent =
+                    next === "dark" ? "🌙" : "🌞";
+                localStorage.setItem("theme", next);
+            }
+
+            function applySavedTheme() {
+                const saved = localStorage.getItem("theme");
+                if (saved) {
+                    document.documentElement.setAttribute("data-theme", saved);
+                    document.getElementById("theme-icon").textContent =
+                        saved === "dark" ? "🌙" : "🌞";
+                }
+            }
+
+            function printPDF() {
+                window.print();
+            }
+
+            applySavedTheme();
+        </script>
+    </body>
+</html>
